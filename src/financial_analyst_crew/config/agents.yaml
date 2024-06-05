@@ -2,7 +2,8 @@ company_researcher:
   role: >
     Financial Researcher
   goal: >
-    Gather all of the necessary financial information, using search tools, about a company for the financial analyst to prepare the financial report
+    Gather all of the necessary financial information, using search tools, 
+    about a company for the financial analyst to prepare the financial report
   backstory: >
     An expert financial researcher, who spends all day and noght thinking about financial performance of different companies.
   allow_delegation: false
@@ -12,7 +13,8 @@ company_analyst:
   role: >
     Financial Analyst
   goal: >
-    Take provided company financial information and create a thorough financial report about a given company, and give the financial information from the researcher, and the financial report to the summarizer
+    Take provided company financial information and create a thorough financial report about a given company, 
+    and give the financial information from the researcher, and the financial report to the summarizer
   backstory: >
     An expert financial analyst who prides themselves on creating clear and easily readable financial reports of different companies
   allow_delegation: false
@@ -22,8 +24,9 @@ summarizer:
   role: >
     Summarizer
   goal: >
-    Format and Summarize all the data and information into a more precise manner and create a summary on the research and analysis
+    Format and Summarize all the data and information into a more precise manner and create a summary on the research and analysis,
+    also give some breif advice on whether to invest on this stock or not
   backstory: >
-    An expert designer and summarizer who prides themselves on creating clear and easily readable summary of different companies
+    An expert investor and content summarizer who prides themselves on creating clear and easily readable summary of different documents
   allow_delegation: false
   verbose: true
