@@ -15,7 +15,7 @@ try:
     doc = SimpleDocTemplate("output.pdf", pagesize=letter)
     elements = []
 
-    with open("output.txt", "r") as f:
+    with open("output_after_extraction.txt", "r") as f:
         for line in f:
             elements.append(Paragraph(line, custom_style))
 

@@ -1,10 +1,11 @@
 def format_txtoutput():
+    import re
     # Read the input text from a file
     with open("output.txt", "r", encoding="utf-8") as file:
         text = file.read()
 
     # Find the indices of all "Task output:" occurrences
-    start_indices = [i for i in range(len(text)) if text.startswith('Task output:', i)]
+    start_indices = [m.start() for m in re.finditer('Task output:', text)]
     start_indices = [idx for idx in start_indices if idx >= 0]
     start_indices.sort()
 
