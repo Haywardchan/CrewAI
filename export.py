@@ -1,7 +1,7 @@
 import subprocess
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph
-from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
 try:
     # Run the command and redirect to a text file
@@ -9,12 +9,13 @@ try:
 
     # Convert the text file to a PDF
     styles = getSampleStyleSheet()
+    custom_style = ParagraphStyle(name='CustomStyle', fontSize=12, leading=14)
     doc = SimpleDocTemplate("output.pdf", pagesize=letter)
     elements = []
 
     with open("output.txt", "r") as f:
         for line in f:
-            elements.append(Paragraph(line, styles["BodyText"]))
+            elements.append(Paragraph(line, custom_style))
 
     doc.build(elements)
     print("PDF file created: output.pdf")
