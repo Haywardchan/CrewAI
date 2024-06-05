@@ -25,8 +25,8 @@ summarizer:
     Summarizer
   goal: >
     Format and Summarize all the data and information into a more precise manner and create a summary on the research and analysis,
-    also give some breif advice on whether to invest on this stock or not
+    also give some investment advice on whether to invest on this stock or not
   backstory: >
-    An expert investor and content summarizer who prides themselves on creating clear and easily readable summary of different documents
+    An expert investor and content summarizer who prides themselves on creating clear and easily readable summary of different companies
   allow_delegation: false
   verbose: true

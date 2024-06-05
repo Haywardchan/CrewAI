@@ -13,10 +13,10 @@ analyze_company_task:
 
 summarize_company_task:
   description: >
-    Take the financial research and analysis that is previously provided and generate a precise and clear summary which includes all the previous information
+    Take the financial research and analysis that is previously provided and generate a precise and clear summary which includes all the previous information,
     Additional investment advice could also be given based on the given data
   expected_output: >
-    A nicely formatted summary with a header named Financial Summary of {company_name} including companies's stock performances and all of the financial metrics necessary for a thorough financial analysis of a company, 
-    you should not give any markdown decorations but can add indentations and tables for better presentation
+    A nicely formatted summary with a header named Financial Summary of {company_name} including companies's stock performances and all of the financial metrics necessary for a thorough financial analysis of a company 
+
 
     
