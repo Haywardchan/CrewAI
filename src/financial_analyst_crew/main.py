@@ -5,13 +5,9 @@ load_dotenv()
 from financial_analyst_crew.crew import FinancialAnalystCrew
 
 def run():
-    inputs = {
-        'company_name': 'Apple',
-        'company_name': 'Microsoft',
-        'company_name': 'IBM'
-    }
-    for input in inputs:
-        FinancialAnalystCrew().crew().kickoff(inputs= input)
+    company_names = [ 'Apple', 'Microsoft', 'IBM']
+    for company in company_names:
+        FinancialAnalystCrew().crew().kickoff(inputs= {'company_name': company})
 
 
 if __name__ == "__main__":

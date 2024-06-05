@@ -28,13 +28,14 @@ try:
             # text = f.read()
             # text.replace("Task Output", PageBreak())
             for line in f:
+                words = line.split()
                 if line.startswith("Task output:"):
                     if elements:
                         elements.append(PageBreak())
                         file.write('\n')
                     elements.append(Paragraph(line.replace("Task output: ", ""), header_style))
                     file.write(line.replace("Task output: ", ""))
-                elif len(line) > 1:
+                elif len(words) > 1:
                     elements.append(Paragraph(line, custom_style))
                     file.write(line)
 
