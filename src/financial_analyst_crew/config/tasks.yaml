@@ -3,18 +3,18 @@ research_company_task:
     Use a search tool to look up this company's stock information: {company_name}.
     The goal is to prepare enough information to make an informed analysis of the company's stock performance
   expected_output: >
-    All of the relevant financial information about the company's stock performance.
+    All of the relevant financial information about the company's stock performance with a header named Financial Research of {company_name}.
 
 analyze_company_task:
   description: >
     Take {company_name}'s financial information, analyze it, and provide a financial analysis, including: Profitability ratio, Liquity ratios, Solvency ratios, Efficiency ratios, Growth metrics, Valuation metrics.
   expected_output: >
-    A nicely formatted analysis including all of the financial metrics necessary for a thorough financial analysis of a company
+    A nicely formatted analysis with a header named Financial Analysis of {company_name} including all of the financial metrics necessary for a thorough financial analysis of a company
 
 summarize_company_task:
   description: >
     Take the financial research and analysis that is previously provided and generate a precise and clear summary which includes all the previous information
   expected_output: >
-    A nicely formatted summary including companies's stock performances and all of the financial metrics necessary for a thorough financial analysis of a company
+    A nicely formatted summary with a header named Financial Summary of {company_name} including companies's stock performances and all of the financial metrics necessary for a thorough financial analysis of a company
 
     

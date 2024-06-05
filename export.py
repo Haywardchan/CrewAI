@@ -28,9 +28,10 @@ try:
             # text = f.read()
             # text.replace("Task Output", PageBreak())
             for line in f:
-                if line.startswith("Task output:") and len(elements)!=0:
-                    elements.append(PageBreak())
-                    file.write('\n')
+                if line.startswith("Task output:"):
+                    if elements:
+                        elements.append(PageBreak())
+                        file.write('\n')
                     elements.append(Paragraph(line.replace("Task output: ", ""), header_style))
                     file.write(line.replace("Task output: ", ""))
                 else:
