@@ -11,7 +11,7 @@ try:
     format_txtoutput()
     # Convert the text file to a PDF
     styles = getSampleStyleSheet()
-    custom_style = ParagraphStyle(name='CustomStyle', fontSize=12, leading=14)
+    custom_style = ParagraphStyle(name='CustomStyle', fontSize=10, leading=14)
     doc = SimpleDocTemplate("output.pdf", pagesize=letter)
     elements = []
 

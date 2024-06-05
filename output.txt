@@ -1,0 +1,7 @@
+[1m[93m [DEBUG]: == Working Agent: Financial Researcher
+[00m
+[1m[93m [INFO]: == Starting Task: Use a search tool to look up this company's stock information: IBM. The goal is to prepare enough information to make an informed analysis of the company's stock performance
+[00m
+
+
+[1m> Entering new CrewAgentExecutor chain...[0m
