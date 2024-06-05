@@ -4,11 +4,11 @@ def format_txtoutput():
         text = file.read()
 
     # Find the indices of all "Task output:" occurrences
-    start_indices = [text.find(f"Task output:") for _ in range(text.count("Task output:"))]
+    start_indices = [i for i in range(len(text)) if text.startswith('Task output:', i)]
     start_indices = [idx for idx in start_indices if idx >= 0]
     start_indices.sort()
 
-    # Extract the text after each "Final Answer:" or "Task output:" up to the first [
+    # Extract the text after each "Task output:" up to the first [
     output_texts = []
     for start_index in start_indices:
         end_index = text.find("[", start_index)
