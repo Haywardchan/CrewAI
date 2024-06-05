@@ -24,7 +24,7 @@ try:
                     elements.append(PageBreak())
                     file.write('\n')
                 elements.append(Paragraph(line.replace("Task output", ""), custom_style))
-                file.write(line.replace("Task output", ""))
+                file.write(line.replace("Task output: ", ""))
 
     doc.build(elements)
     print("PDF file created: output.pdf")
