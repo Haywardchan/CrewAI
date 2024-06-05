@@ -13,7 +13,7 @@ analyze_company_task:
 
 summarize_company_task:
   description: >
-    Take the financial research and analysis that is previously provided and generate a precise and clear summary
+    Take the financial research and analysis that is previously provided and generate a precise and clear summary which includes all the previous information
   expected_output: >
     A nicely formatted summary including companies's stock performances and all of the financial metrics necessary for a thorough financial analysis of a company
 
