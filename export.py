@@ -12,6 +12,14 @@ try:
     # Convert the text file to a PDF
     styles = getSampleStyleSheet()
     custom_style = ParagraphStyle(name='CustomStyle', fontSize=10, leading=14)
+    header_style = ParagraphStyle(
+        name='Header',
+        parent=styles['Heading1'],
+        fontSize=16,
+        leading=20,
+        spaceAfter=12,
+        alignment=1  # Center alignment
+    )
     doc = SimpleDocTemplate("output.pdf", pagesize=letter)
     elements = []
 
@@ -23,8 +31,11 @@ try:
                 if line.startswith("Task output:") and len(elements)!=0:
                     elements.append(PageBreak())
                     file.write('\n')
-                elements.append(Paragraph(line.replace("Task output", ""), custom_style))
-                file.write(line.replace("Task output: ", ""))
+                    elements.append(Paragraph(line.replace("Task output: ", ""), header_style))
+                    file.write(line.replace("Task output: ", ""))
+                else:
+                    elements.append(Paragraph(line, custom_style))
+                    file.write(line)
 
     doc.build(elements)
     print("PDF file created: output.pdf")
