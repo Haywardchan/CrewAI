@@ -2,11 +2,13 @@ import subprocess
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from format_txt import format_txtoutput
 
 try:
     # Run the command and redirect to a text file
     subprocess.run("poetry run financial_analyst_crew > output.txt", shell=True, check=True)
-
+    # Format the pdf file
+    format_txtoutput()
     # Convert the text file to a PDF
     styles = getSampleStyleSheet()
     custom_style = ParagraphStyle(name='CustomStyle', fontSize=12, leading=14)
