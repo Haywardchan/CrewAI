@@ -33,6 +33,13 @@ class FinancialAnalystCrew():
             llm = self.groq_llm
         )
     
+    @agent
+    def summarizer(self) -> Agent:
+        return Agent(
+            config = self.agents_config['summarizer'],
+            llm = self.groq_llm
+        )
+
     @task
     def research_company_task(self) -> Task:
         return Task(
@@ -47,12 +54,19 @@ class FinancialAnalystCrew():
             agent = self.company_analyst()
         )
     
+    @task
+    def summarize_company_task(self) -> Task:
+        return Task(
+            config = self.tasks_config['summarize_company_task'],
+            agent = self.summarizer()
+        )
+    
     @crew
     def crew(self) -> Crew:
         return Crew(
-            agents = [self.company_analyst(), self.company_researcher()],
-            tasks = [self.research_company_task(), self.analyze_company_task()],
+            agents = [self.company_analyst(), self.company_researcher(), self.summarizer()],
+            tasks = [self.research_company_task(), self.analyze_company_task(), self.summarize_company_task()],
             process = Process.sequential,
             full_output = True,
-            verbose = 2
+            verbose = 3
         )
