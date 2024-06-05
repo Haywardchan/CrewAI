@@ -12,5 +12,6 @@ def run():
     }
     FinancialAnalystCrew().crew().kickoff(inputs= inputs)
 
+
 if __name__ == "__main__":
     run()

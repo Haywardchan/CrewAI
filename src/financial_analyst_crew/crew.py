@@ -44,7 +44,8 @@ class FinancialAnalystCrew():
     def research_company_task(self) -> Task:
         return Task(
             config = self.tasks_config['research_company_task'],
-            agent = self.company_researcher()
+            agent = self.company_researcher(),
+            callback = self.savepdf
         )
     
     @task
@@ -70,3 +71,19 @@ class FinancialAnalystCrew():
             full_output = True,
             verbose = 3
         )
+    def savepdf():
+        from reportlab.lib.pagesizes import letter
+        from reportlab.platypus import SimpleDocTemplate, Paragraph
+        from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+        # Convert the text file to a PDF
+        styles = getSampleStyleSheet()
+        custom_style = ParagraphStyle(name='CustomStyle', fontSize=12, leading=14)
+        doc = SimpleDocTemplate("output.pdf", pagesize=letter)
+        elements = []
+
+        with open("output.txt", "r") as f:
+            for line in f:
+                elements.append(Paragraph(line, custom_style))
+
+        doc.build(elements)
+        print("PDF file created: output.pdf")
