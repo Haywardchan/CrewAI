@@ -1,6 +1,6 @@
 def format_txtoutput():
     # Read the input text from a file
-    with open("input_text.txt", "r", encoding="utf-8") as file:
+    with open("output.txt", "r", encoding="utf-8") as file:
         text = file.read()
 
     # Find the indices of all "Task output:" occurrences
