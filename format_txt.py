@@ -4,7 +4,7 @@ def format_txtoutput():
         text = file.read()
 
     # Find the indices of all "Task output:" occurrences
-    start_indices = [text.find(f"Task output:")]
+    start_indices = [text.find(f"Task output:") for _ in range(text.count("Task output:"))]
     start_indices = [idx for idx in start_indices if idx >= 0]
     start_indices.sort()
 
