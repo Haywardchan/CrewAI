@@ -34,7 +34,7 @@ try:
                         file.write('\n')
                     elements.append(Paragraph(line.replace("Task output: ", ""), header_style))
                     file.write(line.replace("Task output: ", ""))
-                else:
+                elif len(line) > 1:
                     elements.append(Paragraph(line, custom_style))
                     file.write(line)
 

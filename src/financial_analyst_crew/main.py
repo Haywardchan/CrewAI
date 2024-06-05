@@ -10,7 +10,8 @@ def run():
         'company_name': 'Microsoft',
         'company_name': 'IBM'
     }
-    FinancialAnalystCrew().crew().kickoff(inputs= inputs)
+    for input in inputs:
+        FinancialAnalystCrew().crew().kickoff(inputs= input)
 
 
 if __name__ == "__main__":
