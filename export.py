@@ -16,10 +16,13 @@ try:
     elements = []
 
     with open("output_after_extraction.txt", "r") as f:
-        text = f.read()
-        text.replace("Task Output", PageBreak())
+        # text = f.read()
+        # text.replace("Task Output", PageBreak())
         for line in f:
-            elements.append(Paragraph(line, custom_style))
+            if line.strip()=="Task output:":
+                elements.append(PageBreak())
+            else:
+                elements.append(Paragraph(line, custom_style))
 
     doc.build(elements)
     print("PDF file created: output.pdf")
