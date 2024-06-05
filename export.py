@@ -1,6 +1,6 @@
 import subprocess
 from reportlab.lib.pagesizes import letter
-from reportlab.platypus import SimpleDocTemplate, Paragraph
+from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from format_txt import format_txtoutput
 
@@ -16,6 +16,8 @@ try:
     elements = []
 
     with open("output_after_extraction.txt", "r") as f:
+        text = f.read()
+        text.replace("Task Output", PageBreak())
         for line in f:
             elements.append(Paragraph(line, custom_style))
 
