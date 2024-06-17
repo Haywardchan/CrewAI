@@ -11,6 +11,9 @@ from sec_api import QueryApi
 from unstructured.partition.html import partition_html
 
 class SECTools():
+  @tool("Database Search")
+  def search_db(data):
+    return
   @tool("Search 10-Q form")
   def search_10q(data):
     """
@@ -110,3 +113,4 @@ class SECTools():
 
     response = requests.get(url, headers=headers)
     return response.text
+  
