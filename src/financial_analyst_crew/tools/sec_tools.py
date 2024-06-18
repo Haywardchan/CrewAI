@@ -13,7 +13,14 @@ from unstructured.partition.html import partition_html
 class SECTools():
   @tool("Database Search")
   def search_db(data):
-    return
+    import psycopg2
+    conn = psycopg2.connect(host="localhost", dbname="finance", user='postgres', password="1234", port="5432")
+    cur = conn.cursor()
+    res = cur.execute("""SELECT * FROM stock_performance""")
+    conn.commit()
+    cur.close()
+    conn.close()
+    return res
   @tool("Search 10-Q form")
   def search_10q(data):
     """
