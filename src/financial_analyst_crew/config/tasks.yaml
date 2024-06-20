@@ -1,9 +1,9 @@
 research_company_task:
   description: >
-    Use a search tool to look up this company's stock information: {company_name}.
+    Use search tools database to look up this company's stock information: {company_name}.
     The goal is to prepare enough information to make an informed analysis of the company's stock performance
   expected_output: >
-    All of the relevant financial information about the company's stock performance with a header named Financial Research of {company_name}.
+    All of the relevant financial information about the company's stock performance with a header named Financial Research of {company_name}, please includes the risk, ROI, sharpe ratio, and the correlation to HSI.
 
 analyze_company_task:
   description: >

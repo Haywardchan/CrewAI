@@ -1,11 +1,10 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-# from langchain_groq import ChatGroq
 from langchain.llms import Ollama
 import yaml
 import os
+from .tools import sec_tools 
 Ollama_mixtral = Ollama(model = "mixtral")
-# os.environ['OPENAI_API_KEY'] = ''
 
 @CrewBase
 class FinancialAnalystCrew():
@@ -23,7 +22,8 @@ class FinancialAnalystCrew():
     def company_researcher(self) -> Agent:
         return Agent(
             config = self.agents_config['company_researcher'],
-            llm = self.groq_llm
+            llm = self.groq_llm,
+            tools = [sec_tools.SECTools.search_db, sec_tools.SECTools.search_db_stock]
         )
     
     @agent
