@@ -4,6 +4,8 @@ from langchain.llms import Ollama
 import yaml
 import os
 from .tools import sec_tools 
+from crewai_tools import WebsiteSearchTool, ScrapeWebsiteTool
+
 Ollama_mixtral = Ollama(model = "mixtral")
 
 @CrewBase
@@ -30,7 +32,8 @@ class FinancialAnalystCrew():
     def company_analyst(self) -> Agent:
         return Agent(
             config = self.agents_config['company_analyst'],
-            llm = self.groq_llm
+            llm = self.groq_llm,
+            tools = [WebsiteSearchTool(), ScrapeWebsiteTool()]
         )
     
     @agent
