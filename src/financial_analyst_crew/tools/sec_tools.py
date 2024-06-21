@@ -28,16 +28,16 @@ class SECTools():
     conn.close()
     return res
   
-  # @tool("Database Search for particular field")
-  # def search_db(query: str):
-  #   """Used to provide the full database information for all stocks related to HSI 
-  #   with the schema (id, stock_id, stock_name, risk, roi, sharpe_ratio, correlatio_to_hsi, pe_ratio, var)"""
-  #   conn = psycopg2.connect(host="localhost", dbname="finance", user='dev', password="93148325", port="5432")
-  #   cur = conn.cursor()
-  #   cur.execute("""SELECT myfield FROM stock_performance WHERE my_field LIKE {query}""")
-  #   res = str(cur.fetchall())
-  #   conn.commit()
-  #   cur.close()
-  #   conn.close()
-  #   return res
+  @tool("Database Search for particular field")
+  def search_db(query: str):
+    """Used to provide the full database information for all stocks related to HSI 
+    with the schema (id, stock_id, stock_name, risk, roi, sharpe_ratio, correlatio_to_hsi, pe_ratio, var)"""
+    conn = psycopg2.connect(host="localhost", dbname="finance", user='dev', password="93148325", port="5432")
+    cur = conn.cursor()
+    cur.execute(f"""SELECT myfield FROM stock_performance WHERE my_field LIKE '{query}'""")
+    res = cur.fetchall()
+    conn.commit()
+    cur.close()
+    conn.close()
+    return res
   
