@@ -2,9 +2,9 @@ research_company_task:
   description: >
     Use search tools database to look up this company's stock information: {company_name}.
     The goal is to prepare enough information to make an informed analysis of the company's stock performance
-    the HSI can be search by querying ^HSI in the database
+    (the HSI can be search by querying ^HSI in the database)
+    Please do not use outdated information, the information on the database is for current.
   expected_output: >
-    A nicely formatted analysis with a header named Financial Research of {company_name} 
     All of the relevant financial information about the company's stock performance with a header named Financial Research of {company_name}, please includes the risk, ROI, sharpe ratio, and the correlation to HSI.
 
 analyze_company_task:

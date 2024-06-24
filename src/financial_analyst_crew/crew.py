@@ -33,7 +33,7 @@ class FinancialAnalystCrew():
         return Agent(
             config = self.agents_config['company_analyst'],
             llm = self.groq_llm,
-            tools = [WebsiteSearchTool(), ScrapeWebsiteTool()]
+            tools = []
         )
     
     @agent

@@ -3,6 +3,7 @@ from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, PageBreak
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from format_txt import format_txtoutput
+import requests
 
 try:
     # Run the command and redirect to a text file
@@ -42,6 +43,16 @@ try:
     doc.build(elements)
     print("PDF file created: output.pdf")
 
+    # Set up API endpoints
+    url = 'http://192.168.230.186:3001/api'
+    with open('output.md', 'rb') as file:
+        files = {'file': file}
+        response = requests.post(url, files=files, verify=False)
+    if response.status_code == 200:
+        print('File Uploaded successfully')
+    else:
+        print('File has not been uploaded')
     
 except subprocess.CalledProcessError as e:
     print(f"Error: {e}")
+
