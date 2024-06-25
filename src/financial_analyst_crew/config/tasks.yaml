@@ -1,16 +1,16 @@
 research_company_task:
   description: >
-    Use search tools database to look up this company's stock information: {company_name}.
+    Search database to look up this company's stock information: {company_name}.
     The goal is to prepare enough information to make an informed analysis of the company's stock performance
-    (the HSI can be search by querying ^HSI in the database)
+    (the information of HSI can be search by querying ^HSI in the database)
     Please do not use outdated information, the information on the database is for current.
   expected_output: >
-    All of the relevant financial information about the company's stock performance with a header named Financial Research of {company_name}, please includes the risk, ROI, sharpe ratio, and the correlation to HSI.
+    All of the relevant financial information about the specific company's stock performance with a header named Financial Research of {company_name}, please includes the risk, ROI, sharpe ratio, and the correlation to HSI.
     Output the result in markdown format. Remember to add breaks like | ----------- | ----------- | for the markdown tables.
 
 analyze_company_task:
   description: >
-    Take {company_name}'s financial information from the researcher, analyze it, and provide a financial analysis, including: Profitability ratio, Liquity ratios, Solvency ratios, Efficiency ratios, Growth metrics, Valuation metrics.
+    Take {company_name}'s financial information from the researcher, analyze it, and provide a financial analysis, including: risk, ROI, sharpe ratio, P/E ratio, VaR, Valuation metrics.
   expected_output: >
     A nicely formatted analysis with a header named Financial Analysis of {company_name} including all of the financial metrics necessary for a thorough financial analysis of a company
     Output the result in markdown format. Remember to add breaks like | ----------- | ----------- | for the markdown tables.

@@ -11,7 +11,7 @@ app = Flask(__name__)
 api = Api(app)
 class CrewAI_API(Resource):
     def get(self, query):
-        # export()
+        export()
         with open('output.md', 'r') as f:
             md = f.read()
         return {'res': render_template_string(md)}, 201
