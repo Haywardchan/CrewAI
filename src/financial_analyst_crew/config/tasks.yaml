@@ -6,12 +6,14 @@ research_company_task:
     Please do not use outdated information, the information on the database is for current.
   expected_output: >
     All of the relevant financial information about the company's stock performance with a header named Financial Research of {company_name}, please includes the risk, ROI, sharpe ratio, and the correlation to HSI.
+    Output the result in markdown format. Remember to add breaks like | ----------- | ----------- | for the markdown tables.
 
 analyze_company_task:
   description: >
     Take {company_name}'s financial information from the researcher, analyze it, and provide a financial analysis, including: Profitability ratio, Liquity ratios, Solvency ratios, Efficiency ratios, Growth metrics, Valuation metrics.
   expected_output: >
     A nicely formatted analysis with a header named Financial Analysis of {company_name} including all of the financial metrics necessary for a thorough financial analysis of a company
+    Output the result in markdown format. Remember to add breaks like | ----------- | ----------- | for the markdown tables.
 
 summarize_company_task:
   description: >
@@ -32,5 +34,5 @@ summarize_company_task:
 
     Recommendation: Given the company's favorable financial metrics, manageable risk profile, and the identified upside potential, we issue a BUY recommendation on BOC Hong Kong (Holdings) Limited (2388.HK).
 
-
+    Output the result in markdown format.
     
