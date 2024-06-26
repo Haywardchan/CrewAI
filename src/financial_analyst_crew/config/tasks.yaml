@@ -47,6 +47,8 @@ summarize_company_task:
   expected_output: >
     A nicely formatted summary with a header named Financial Summary of {company_name} including companies's stock performances and all of the financial metrics necessary for a thorough financial analysis of a company 
     with the example template, give reasons for you recommendations such as BUY, SELL, and HOLD: 
+    Here is an example output:
+    **Financial Analysis of 0001.HK**
 
     We issue a BUY recommendation on BOC Hong Kong (Holdings) Limited based on a one-year target price of 26.2, 
     offering a 8.7% upside potential from its closing price of 24.6 on June 18 2024. Our recommendation is 

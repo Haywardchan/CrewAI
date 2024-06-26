@@ -53,6 +53,8 @@ def export():
                     elif len(words) > 1:
                         elements.append(Paragraph(line, custom_style))
                         file.write(line)
+                    elif len(words) == 0:
+                        file.write(line)
 
         doc.build(elements)
         print("PDF file created: output.pdf")
