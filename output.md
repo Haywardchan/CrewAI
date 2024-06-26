@@ -1,45 +1,38 @@
-# Financial Research of 0001.HK
-| Category      | Value   |
-| ----------- | ----------- |
-| Risk          | 20.92     |
-| ROI           | -18.13    |
-| Sharpe Ratio  | -0.87     |
-| Correlation to HSI | 0.75      |
-| P/E Ratio     | 6.14      |
-| Variance      | 2.20      |
-The stock with id 0001.HK, CK Hutchison Holdings Limited, has a risk of 20.92, which is higher than the average risk level. The ROI (return on investment) is negative at -18.13%, indicating that the company is not generating profits for its investors. The Sharpe Ratio is also negative at -0.87, suggesting that the stock's performance is poor even when considering its low risk-free rate. The correlation to HSI (Hang Seng Index) is 0.75, meaning that the stock's price movements are moderately positively correlated with the overall market. The P/E Ratio is 6.14, which is below the average P/E ratio, indicating that the stock may be undervalued. The variance of the stock is 2.20, which measures the volatility of the stock's returns and shows that it has a moderate level of risk.
-Overall, the financial performance of CK Hutchison Holdings Limited is poor, with negative ROI and Sharpe Ratio. However, the stock may be undervalued, as indicated by its low P/E ratio, and could be a potential investment opportunity for those willing to take on higher risk. Investors should carefully consider their investment goals and risk tolerance before investing in this stock.
-
-**Financial Analysis of 0001.HK**
+**Financial Research of 0002.HK**
 | Category          | Value   |
 | ----------------- | ------- |
-| Risk              | 20.92   |
-| ROI               | -18.13  |
-| Sharpe Ratio      | -0.87   |
-| Correlation to HSI| 0.75    |
-| P/E Ratio         | 6.14    |
-| Variance          | 2.20    |
-* **Risk:** The risk level of CK Hutchison Holdings Limited is 20.92, which is higher than the average risk level. This indicates that there is a greater potential for financial loss when investing in this company compared to other investment opportunities.
-* **ROI (Return on Investment):** The ROI for CK Hutchison Holdings Limited is negative at -18.13%, indicating that the company is not generating profits for its investors. This is a significant red flag, as it suggests that the company may be struggling to maintain financial stability.
-* **Sharpe Ratio:** The Sharpe Ratio of CK Hutchison Holdings Limited is also negative at -0.87, suggesting that the stock's performance is poor even when considering its low risk-free rate. This further supports the idea that this company may not be a strong investment opportunity.
-* **Correlation to HSI:** The correlation to HSI (Hang Seng Index) for CK Hutchison Holdings Limited is 0.75, meaning that the stock's price movements are moderately positively correlated with the overall market. This indicates that the company's performance may be influenced by broader economic trends.
-* **P/E Ratio:** The P/E Ratio for CK Hutchison Holdings Limited is 6.14, which is below the average P/E ratio. This suggests that the stock may be undervalued and could potentially offer a good investment opportunity for those willing to take on higher risk.
-* **Variance:** The variance of CK Hutchison Holdings Limited's stock returns is 2.20, which measures the volatility of the stock's returns. This moderate level of risk indicates that there may be some fluctuations in the company's performance over time.
-Overall, the financial performance of CK Hutchison Holdings Limited is poor, with negative ROI and Sharpe Ratio. However, the stock may be undervalued, as indicated by its low P/E ratio, and could be a potential investment opportunity for those willing to take on higher risk. Investors should carefully consider their investment goals and risk tolerance before investing in this stock.
+| Risk              | 20.66   |
+| ROI               | 20.88   |
+| Sharpe Ratio      | 1.01    |
+| Correlation to HSI| 0.56    |
+| P/E Ratio         | 24.79   |
+| Variance          | 2.17    |
 
-Financial Summary of 0001.HK
+**Financial Analysis of 0002.HK**
 | Category          | Value   |
 | ----------------- | ------- |
-| Risk              | 20.92   |
-| ROI               | -18.13  |
-| Sharpe Ratio      | -0.87   |
-| Correlation to HSI| 0.75    |
-| P/E Ratio         | 6.14    |
-| Variance          | 2.20    |
-* **Risk:** The risk level of CK Hutchison Holdings Limited is relatively high at 20.92, which could lead to a greater potential for financial loss compared to other investment opportunities. Investors should be aware of this higher risk.
-* **ROI:** The ROI for CK Hutchison Holdings Limited is negative at -18.13%, indicating that the company is not generating profits for its investors. This is a significant red flag and suggests that the company may be struggling to maintain financial stability.
-* **Sharpe Ratio:** With a Sharpe Ratio of -0.87, CK Hutchison Holdings Limited's stock performance is poor even when considering its low risk-free rate. This further supports the idea that this company may not be a strong investment opportunity.
-* **Correlation to HSI:** The correlation to HSI (Hang Seng Index) for CK Hutchison Holdings Limited is 0.75, meaning that the stock's price movements are moderately positively correlated with the overall market. This indicates that the company's performance may be influenced by broader economic trends.
-* **P/E Ratio:** The P/E Ratio for CK Hutchison Holdings Limited is 6.14, which is below the average P/E ratio. This suggests that the stock may be undervalued and could potentially offer a good investment opportunity for those willing to take on higher risk.
-* **Variance:** The variance of CK Hutchison Holdings Limited's stock returns is 2.20, which measures the volatility of the stock's returns. This moderate level of risk indicates that there may be some fluctuations in the company's performance over time.
-Based on this financial summary and analysis, we issue a **SELL** recommendation for CK Hutchison Holdings Limited (0001.HK) due to several concerning factors, including negative ROI and Sharpe Ratio. While the stock may be undervalued as indicated by its low P/E ratio, the higher risk level and poor financial performance outweigh this potential benefit. Investors should consider these factors and proceed with caution when considering an investment in CK Hutchison Holdings Limited.
+| Risk              | 20.66   |
+| ROI               | 20.88   |
+| Sharpe Ratio      | 1.01    |
+| Correlation to HSI| 0.56    |
+| P/E Ratio         | 24.79   |
+| Variance          | 2.17    |
+* **Risk:** The risk level of 0002.HK is 20.66, which is relatively moderate compared to the average risk level. This indicates that there is a reasonable potential for financial loss when investing in this company, but it's not significantly higher than other investment opportunities.
+* **ROI (Return on Investment):** The ROI for 0002.HK is positive at 20.88%, indicating that the company is generating profits for its investors. This is a positive sign of financial stability and growth potential.
+* **Sharpe Ratio:** The Sharpe Ratio of 0002.HK is also positive at 1.01, suggesting that the stock's performance is strong even when considering its moderate risk-free rate. This further supports the idea that this company may be a good investment opportunity.
+* **Correlation to HSI:** The correlation to HSI (Hang Seng Index) for 0002.HK is 0.56, meaning that the stock's price movements are moderately positively correlated with the overall market. This indicates that the company's performance may be influenced by broader economic trends.
+* **P/E Ratio:** The P/E Ratio for 0002.HK is 24.79, which is above the average P/E ratio. This suggests that the stock may be overvalued and could potentially offer lower returns compared to other investment opportunities with similar risk profiles.
+* **Variance:** The variance of 0002.HK's stock returns is 2.17, which measures the volatility of the stock's returns. This moderate level of risk indicates that there may be some fluctuations in the company's performance over time.
+Overall, the financial performance of 0002.HK is positive, with a high ROI and Sharpe Ratio, indicating strong investment potential. However, the stock may be slightly overvalued as indicated by its P/E ratio. Investors should carefully consider their investment goals and risk tolerance before investing in this stock.
+
+Financial Summary of 0002.HK
+| Category          | Value   |
+| ----------------- | ------- |
+| Risk              | 20.66   |
+| ROI               | 20.88   |
+| Sharpe Ratio      | 1.01    |
+| Correlation to HSI| 0.56    |
+| P/E Ratio         | 24.79   |
+| Variance          | 2.17    |
+* **Risk:** The risk level of 0002.HK is 20.66, indicating a reasonable potential for financial loss when investing in this company. However, it's not significantly higher than other investment opportunities.
+* **ROI (Return on Investment):** The ROI for 0

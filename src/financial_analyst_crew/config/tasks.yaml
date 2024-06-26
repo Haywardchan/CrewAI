@@ -6,30 +6,11 @@ research_company_task:
     Please do not use outdated information, the information on the database is for current.
   expected_output: >
     All of the relevant financial information about the specific company's stock performance with a header named Financial Research of {company_name}, please includes the risk, ROI, sharpe ratio, and the correlation to HSI.
-    Output the result in markdown format. Remember to add | ----------- | ----------- | for the markdown tables.
+    Output the result in markdown format. Remember to add | ----------- | ----------- | for the markdown tables and add new line before and after it.
     
     Here is an example output:
     **Financial Research of 0001.HK**
-    | Category      | Value   |
-    | ----------- | ----------- |
-    | Risk          | 20.92     |
-    | ROI           | -18.13    |
-    | Sharpe Ratio  | -0.87     |
-    | Correlation to HSI | 0.75      |
-    | P/E Ratio     | 6.14      |
-    | Variance      | 2.20      |
-    The stock with id 0001.HK, CK Hutchison Holdings Limited, has a risk of 20.92, which is higher than the average risk level. The ROI (return on investment) is negative at -18.13%, indicating that the company is not generating profits for its investors. The Sharpe Ratio is also negative at -0.87, suggesting that the stock's performance is poor even when considering its low risk-free rate. The correlation to HSI (Hang Seng Index) is 0.75, meaning that the stock's price movements are moderately positively correlated with the overall market. The P/E Ratio is 6.14, which is below the average P/E ratio, indicating that the stock may be undervalued. The variance of the stock is 2.20, which measures the volatility of the stock's returns and shows that it has a moderate level of risk.
-    Overall, the financial performance of CK Hutchison Holdings Limited is poor, with negative ROI and Sharpe Ratio. However, the stock may be undervalued, as indicated by its low P/E ratio, and could be a potential investment opportunity for those willing to take on higher risk. Investors should carefully consider their investment goals and risk tolerance before investing in this stock.
 
-analyze_company_task:
-  description: >
-    Take {company_name}'s financial information from the researcher, analyze it, and provide a financial analysis, including: risk, ROI, sharpe ratio, P/E ratio, VaR, Valuation metrics.
-  expected_output: >
-    A nicely formatted analysis with a header named Financial Analysis of {company_name} including all of the financial metrics necessary for a thorough financial analysis of a company
-    Output the result in markdown format. Remember to add | ----------- | ----------- | for the markdown tables.
-
-    Here is an example output:
-    **Financial Analysis of 0001.HK**
     | Category          | Value   |
     | ----------------- | ------- |
     | Risk              | 20.92   |
@@ -38,6 +19,20 @@ analyze_company_task:
     | Correlation to HSI| 0.75    |
     | P/E Ratio         | 6.14    |
     | Variance          | 2.20    |
+
+    The stock with id 0001.HK, CK Hutchison Holdings Limited, has a risk of 20.92, which is higher than the average risk level. The ROI (return on investment) is negative at -18.13%, indicating that the company is not generating profits for its investors. The Sharpe Ratio is also negative at -0.87, suggesting that the stock's performance is poor even when considering its low risk-free rate. The correlation to HSI (Hang Seng Index) is 0.75, meaning that the stock's price movements are moderately positively correlated with the overall market. The P/E Ratio is 6.14, which is below the average P/E ratio, indicating that the stock may be undervalued. The variance of the stock is 2.20, which measures the volatility of the stock's returns and shows that it has a moderate level of risk.
+    Overall, the financial performance of CK Hutchison Holdings Limited is poor, with negative ROI and Sharpe Ratio. However, the stock may be undervalued, as indicated by its low P/E ratio, and could be a potential investment opportunity for those willing to take on higher risk. Investors should carefully consider their investment goals and risk tolerance before investing in this stock.
+
+analyze_company_task:
+  description: >
+    Take {company_name}'s financial information from the researcher, analyze it, and provide a financial analysis, including: risk, ROI, sharpe ratio, P/E ratio, VaR, Valuation metrics.
+  expected_output: >
+    A nicely formatted analysis with a header named Financial Analysis of {company_name} including all of the financial metrics necessary for a thorough financial analysis of a company
+    Output the result in markdown format. Remember to add | ----------- | ----------- | for the markdown tables and add new line before and after it.
+
+    Here is an example output:
+    **Financial Analysis of 0001.HK**
+
     * **Risk:** The risk level of CK Hutchison Holdings Limited is 20.92, which is higher than the average risk level. This indicates that there is a greater potential for financial loss when investing in this company compared to other investment opportunities.
     * **ROI (Return on Investment):** The ROI for CK Hutchison Holdings Limited is negative at -18.13%, indicating that the company is not generating profits for its investors. This is a significant red flag, as it suggests that the company may be struggling to maintain financial stability.
     * **Sharpe Ratio:** The Sharpe Ratio of CK Hutchison Holdings Limited is also negative at -0.87, suggesting that the stock's performance is poor even when considering its low risk-free rate. This further supports the idea that this company may not be a strong investment opportunity.
@@ -64,5 +59,5 @@ summarize_company_task:
 
     Recommendation: Given the company's favorable financial metrics, manageable risk profile, and the identified upside potential, we issue a BUY recommendation on BOC Hong Kong (Holdings) Limited (2388.HK).
 
-    Output the result in markdown format. Remember to add | ----------- | ----------- | for the markdown tables.
+    Output the result in markdown format. Remember to add | ----------- | ----------- | for the markdown tables and add new line before and after it.
     

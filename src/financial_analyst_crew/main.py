@@ -10,7 +10,7 @@ def run():
     # for company in company_names:
     #     FinancialAnalystCrew().crew().kickoff(inputs= {'company_name': company})
     # # TracerProvider issue exist so it is better to do search one by one
-    FinancialAnalystCrew().crew().kickoff(inputs= {'company_name': '0001.HK'})
+    FinancialAnalystCrew().crew().kickoff(inputs= {'company_name': '0002.HK'})
 
 if __name__ == "__main__":
     run()
