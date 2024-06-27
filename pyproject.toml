@@ -9,7 +9,7 @@ python = ">=3.10,<=3.13"
 crewai = {extras = ["tools"], version = "^0.22.2"}
 
 [tool.poetry.scripts]
-financial_analyst_crew = "financial_analyst_crew.main:run"
+financial_analyst_crew = "financial_analyst_crew.main:main"
 
 [build-system]
 requires = ["poetry-core"]

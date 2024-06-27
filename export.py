@@ -5,23 +5,26 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from format_txt import format_txtoutput
 from flask import Flask, request, render_template_string
 from flask_restful import Api, Resource
-
+import sys
+from src.financial_analyst_crew.main import run
 # Set up an API for fetching the result from the backend
 app = Flask(__name__)
 api = Api(app)
+
 class CrewAI_API(Resource):
     def get(self, query):
-        export()
+        export(query)
         with open('output.md', 'r') as f:
             md = f.read()
         return {'res': render_template_string(md)}, 201
     
 api.add_resource(CrewAI_API, '/api/res/<string:query>')
 
-def export():
+def export(query):
     try:
         # Run the command and redirect to a text file
-        subprocess.run("poetry run financial_analyst_crew > output.txt", shell=True, check=True)
+        subprocess.run(f"poetry run financial_analyst_crew {query} > output.txt", shell=True, check=True)
+
         # Format the pdf file
         format_txtoutput()
         # Convert the text file to a PDF
