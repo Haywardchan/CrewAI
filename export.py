@@ -7,13 +7,14 @@ from flask import Flask, request, render_template_string
 from flask_restful import Api, Resource
 import sys
 from src.financial_analyst_crew.main import run
+
 # Set up an API for fetching the result from the backend
 app = Flask(__name__)
 api = Api(app)
 
 class CrewAI_API(Resource):
     def get(self, query):
-        export(query)
+        # export(query)
         with open('output.md', 'r') as f:
             md = f.read()
         return {'res': render_template_string(md)}, 201
@@ -66,4 +67,4 @@ def export(query):
         print(f"Error: {e}")
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)

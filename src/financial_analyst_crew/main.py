@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import sys
 load_dotenv()
 
-from financial_analyst_crew.crew import FinancialAnalystCrew
+from src.financial_analyst_crew.crew import FinancialAnalystCrew
 def run(query):
     # os.chdir(os.getcwd + '/CrewAi')
     # company_names = [ 'Apple', 'Microsoft', 'IBM']
