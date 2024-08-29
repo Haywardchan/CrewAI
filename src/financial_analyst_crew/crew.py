@@ -24,7 +24,7 @@ class FinancialAnalystCrew():
         return Agent(
             config = self.agents_config['company_researcher'],
             llm = self.groq_llm,
-            tools = [sec_tools.SECTools.search_db, sec_tools.SECTools.search_db_stock]
+            tools = [sec_tools.SECTools.search_db_stock]
         )
     
     @agent
